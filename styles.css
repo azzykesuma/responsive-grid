@@ -79,6 +79,94 @@ h4 {
 }
 
 /* mobile styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap : 10px;
+}
+
+.site-nav {
+    margin: 0 20px;
+}
+
+.site-nav ul {
+    display: none;
+}
+
+.site-nav h1 {
+    grid-column: 1/4;
+    padding-bottom : 20px;
+    border-bottom: 3px solid var(--primary);
+}
+
+#welcome{
+    padding : 0px 20px 20px 20px;
+}
+
+.welcome-text {
+    grid-column: 1/6;
+}
+
+.welcome-text a {
+    margin: 20px 0;
+}
+
+.welcome-img {
+    grid-column: 6/9;
+}
+
+.welcome-img img {
+    width : 200%;
+}
+
+#portfolio {
+    background-image: url('./asset/square_bg.png');
+    background-size : cover;
+    background-repeat: no-repeat;
+    padding : 30px 20px;
+}
+
+#portfolio h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#portfolio a {
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+}
+
+#portfolio a * {
+    margin: 0 20px;
+    align-self: center;
+    width : 40%;
+}
+
+.projects h4 {
+    color : #9994f7;
+}
+
+#skills {
+    padding : 30px 20px;
+    background : #07083e;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills li {
+    grid-column: span 4;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding : 10px;
+    text-align: center;
+} 
+
+#skills img {
+    height : 80px;
+    margin : 10px auto;
+}
 
 /* tablet */
 @media screen and (min-width : 620px) {
